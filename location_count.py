@@ -19,5 +19,9 @@ def preprocessing():
 def count():
     lines_split = preprocessing().map(lambda x: x.split(",")[-1])
     count = lines_split.countByValue()
+    print(count)
     
     return count
+
+
+count()
