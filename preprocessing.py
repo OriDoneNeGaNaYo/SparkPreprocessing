@@ -19,6 +19,7 @@ def preprocessing(filename, csv_file):
     pd.concat(dd).to_csv("sgi_bus_station.csv", index=False, index_label=False)
 
 
+    
 if __name__ == "__main__":
     preprocessing(filename="english_korea_busstop.csv", 
                 csv_file=city_extract(filename="gyoung.csv"))
